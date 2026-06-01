@@ -222,7 +222,11 @@ FROM fights_career_longitudinal
 WHERE is_major_org
 GROUP BY organization
 ORDER BY lutas DESC;
+
+<img width="669" height="300" alt="image" src="https://github.com/user-attachments/assets/72297b66-c6fd-48dd-84eb-82882e6256e1" />
+
 ```
+
 
 ### 8.2 Carreiras multi-organização
 
