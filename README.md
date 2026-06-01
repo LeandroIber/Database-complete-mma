@@ -4,23 +4,6 @@ Dataset estruturado de **129.285 lutas de MMA** cobrindo o período **1993-2026*
 
 Pronto para uso em Python (pandas), SQL puro ou ferramentas como DBeaver, Tableau e Power BI.
 
----
-
-## Sumário
-
-- [1. Visão geral](#1-visão-geral)
-- [2. Estrutura do banco](#2-estrutura-do-banco)
-- [3. Fontes de dados](#3-fontes-de-dados)
-- [4. Cobertura por organização](#4-cobertura-por-organização)
-- [5. Metodologia](#5-metodologia)
-- [6. Limitações conhecidas](#6-limitações-conhecidas)
-- [7. Como usar](#7-como-usar)
-- [8. Exemplos de queries](#8-exemplos-de-queries)
-- [9. Pipeline reprodutível](#9-pipeline-reprodutível)
-- [10. Licença](#10-licença)
-
----
-
 ## 1. Visão geral
 
 | Métrica | Valor |
@@ -154,13 +137,13 @@ Lutas e lutadores raspados do Sherdog Fight Finder, que mantém o catálogo púb
 
 O campo bruto `method` tem 200+ variações (`KO (Punch to the Head)`, `Submission (Rear-Naked Choke)`, etc). Foi normalizado em 7 categorias canônicas via `method_normalized`:
 
-- `KO` — Knockout (perda de consciência)
-- `TKO` — Technical Knockout (interrupção médica/arbitral)
-- `Submission` — Finalização
-- `Decision` — Decisão dos juízes
-- `DQ` — Desqualificação
-- `Overturned` — Resultado revertido
-- `Other` — Casos atípicos (ex: contusão sem golpe)
+- `KO` - Knockout (perda de consciência)
+- `TKO` - Technical Knockout (interrupção médica/arbitral)
+- `Submission` - Finalização
+- `Decision` - Decisão dos juízes
+- `DQ` - Desqualificação
+- `Overturned` - Resultado revertido
+- `Other` - Casos atípicos (ex: contusão sem golpe)
 
 ## 6. Limitações conhecidas
 
