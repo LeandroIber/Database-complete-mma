@@ -284,6 +284,45 @@ ORDER BY r.rank LIMIT 10;
 ```
 <img width="619" height="223" alt="image" src="https://github.com/user-attachments/assets/3230a6ac-d61b-4b99-a595-dd9fde653833" />
 
+### 8.5 Maiores finalizadores UFC
+
+```sql
+SELECT 
+    winner AS lutador,
+    COUNT(*) AS submissoes
+FROM fights_master_typed
+WHERE organization = 'ufc'
+  AND method_normalized = 'Submission'
+  AND winner IN (fighter_1, fighter_2)
+GROUP BY winner
+ORDER BY submissoes DESC
+LIMIT 20;
+```
+<img width="291" height="413" alt="image" src="https://github.com/user-attachments/assets/266c721d-d9c0-4392-b4cc-a1995adad5ec" />
+
+### 8.6 Maiores nocauteadores UFC
+
+```sql
+SELECT 
+    winner AS lutador,
+    COUNT(*) AS nocautes,
+    SUM(CASE WHEN method_normalized = 'KO' THEN 1 ELSE 0 END) AS ko,
+    SUM(CASE WHEN method_normalized = 'TKO' THEN 1 ELSE 0 END) AS tko
+FROM fights_master_typed
+WHERE organization = 'ufc'
+  AND method_normalized IN ('KO', 'TKO')
+  AND winner IN (fighter_1, fighter_2)
+GROUP BY winner
+ORDER BY nocautes DESC
+LIMIT 20;
+```
+<img width="449" height="412" alt="image" src="https://github.com/user-attachments/assets/fb11225a-d4ff-4cf7-9daf-dce523f417f6" />
+
+
+
+
+
+
 
 ---
 
