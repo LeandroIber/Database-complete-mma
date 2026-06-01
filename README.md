@@ -1,6 +1,6 @@
-# MMA Global Dataset
+# MMA Global Database
 
-Dataset estruturado de **129.285 lutas de MMA** cobrindo o período **1993-2026** de mais de **4.300 organizações**, das quais **10 são organizações principais** (UFC, Bellator, ACA, Cage Warriors, LFA, Jungle Fight, PFL, KSW, Oktagon, Rizin). Construído em DuckDB, com pipeline ELT reprodutível, validação cruzada contra fontes externas e modelagem dimensional para análise.
+Database estruturado de **129.285 lutas de MMA** cobrindo o período **1993-2026** de mais de **4.300 organizações**, das quais **10 são organizações principais** (UFC, Bellator, ACA, Cage Warriors, LFA, Jungle Fight, PFL, KSW, Oktagon, Rizin). Construído em DuckDB, com pipeline ELT reprodutível, validação cruzada contra fontes externas e modelagem dimensional para análise.
 
 Pronto para uso em Python (pandas), SQL puro ou ferramentas como DBeaver, Tableau e Power BI.
 
