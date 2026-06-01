@@ -243,6 +243,8 @@ GROUP BY fighter_name
 HAVING COUNT(DISTINCT organization) >= 4
 ORDER BY orgs DESC;
 ```
+<img width="623" height="533" alt="image" src="https://github.com/user-attachments/assets/752a93e0-47a7-4ee4-a0d4-bf7610b63dbb" />
+
 
 ### 8.3 Performance técnica UFC (queda + controle)
 
@@ -260,6 +262,8 @@ WHERE organization = 'ufc'
 ORDER BY f1_td_landed DESC
 LIMIT 20;
 ```
+<img width="843" height="414" alt="image" src="https://github.com/user-attachments/assets/8835136e-a0b7-465a-a0a3-4782251d1853" />
+
 
 ### 8.4 Validação cross-source
 
@@ -278,6 +282,8 @@ WHERE r.categoria = 'Vitórias'
 GROUP BY r.rank, r.fighter_name, r.valor_num
 ORDER BY r.rank LIMIT 10;
 ```
+<img width="619" height="223" alt="image" src="https://github.com/user-attachments/assets/3230a6ac-d61b-4b99-a595-dd9fde653833" />
+
 
 ---
 
