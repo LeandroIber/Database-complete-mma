@@ -4,6 +4,8 @@ Database estruturado de **129.285 lutas de MMA** cobrindo o período **1993-2026
 
 Pronto para uso em Python (pandas), SQL puro ou ferramentas como DBeaver, Tableau e Power BI.
 
+Link Database (https://www.kaggle.com/datasets/leandroiber/mmastats)
+
 ## 1. Visão geral
 
 | Métrica | Valor |
